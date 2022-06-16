@@ -71,9 +71,16 @@
     </div>
   </main>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+
+  <script>
+    const button = document.querySelector(".button-share");
+    const componentShare = document.querySelector(".share");
+
+    button.addEventListener("click", ()=>{
+      componentShare.classList.toggle("active");
+    });
+  </script>
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
