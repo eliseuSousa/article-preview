@@ -117,7 +117,7 @@ main.article {
           margin-left: 1.2rem;
         }
 
-        div.share ul li a img{
+        div.share ul li a img {
           width: 20px;
         }
 
@@ -132,3 +132,61 @@ main.article {
           border-top: 15px solid var(--very-dark-grayish-blue);
           position: absolute;
         }
+
+@media screen and (max-width: 425px) {
+
+  main.article {
+    width: 33.5rem;
+    height: 45.7rem;
+  }
+
+    div.card {
+      flex-direction: column;
+    }
+
+      div.conteudo {
+        margin-bottom: 6.4rem;
+        padding-bottom: 1.8rem;
+      }
+
+      div.texto h1 {
+        font-size: 1.7rem;
+      }
+
+      div.texto p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-top: 1.2rem;
+      }
+
+      div.descricao {
+        margin-top: 2.3rem;
+      }
+
+      button.button-share {
+        z-index: 1;
+      }
+      
+      div.share {
+        width: 100%;
+        right: 0rem;
+        top: 23.5rem;
+        padding: 1.8rem 2.4rem;
+      }
+
+      div.active {
+        transform: translateY(-1rem);
+      }
+
+      div.share::after {
+        display: none;
+      }
+
+      div.share ul li {
+        margin-left: 2rem;
+      }
+
+      div.share ul li a img {
+        width: 22px;
+      }
+}
