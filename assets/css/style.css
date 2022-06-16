@@ -1,0 +1,83 @@
+main.article {
+  width: 70.4rem;
+  height: 26.7rem;
+}
+
+  div.card {
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    overflow: hidden;
+  }
+
+    img{
+      width: 330px;
+    }
+
+    div.conteudo {
+      background: #fdfdfdf0;
+      border-radius: 0 .8rem .8rem 0;
+      padding: 3rem;
+    }
+
+      div.texto h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--very-dark-grayish-blue);
+      }
+
+      div.texto p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--desaturated-dark-blue);
+        margin: 1.2rem 0;
+      }
+
+      div.descricao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+        div.perfil {
+          display: flex;
+          align-items: center;
+        }
+
+          img.avatar {
+            width: 36px;
+            border-radius: 50%;
+          }
+
+          div.dados {
+            margin-left: 1.2rem;
+          }
+
+            h2.nome {
+              font-size: 1rem;
+              font-weight: 700;
+              color: var(--very-dark-grayish-blue);
+              margin-bottom: .2rem;
+            }
+
+            span.data {
+              font-size: 1.1rem;
+              font-weight: 500;
+              color: var(--desaturated-dark-blue);
+            }
+
+        button.button-share {
+          background: var(--light-grayish-blue);
+          width: 3.2rem;
+          height: 3.2rem;
+          border-radius: 50%;
+          border: none;
+          background-image: url('../images/icon-share.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        button.button-share:hover {
+          cursor: pointer;
+        }
+
